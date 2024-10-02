@@ -1,0 +1,82 @@
+:root{
+    --black: rgb(33, 32, 46);
+}
+
+.title{
+    font-size: 250px;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    color: var(--black);
+}
+
+.title-pages{
+    font-size: 100px;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    color: var(--black);
+}
+
+.navbar{
+    background-color: var(--black);
+}
+
+.dropdown-menu{
+    background-color: var(--black);
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar li{
+    color: white;
+}
+
+.logo{
+    width: 30px;
+    margin-right: 3px;
+}
+
+.header-custom{
+    background-image: url('/public/media/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar button{
+    color: red;
+    width: 20%;
+}
+
+.storeform{
+    width: 50%;
+    background-color: var(--black);
+    color: white;
+}
+
+.card{
+    background-color: var(--black);
+    color: white;
+}
+
+.buttonwrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardrow{
+    height: 400px;
+}
