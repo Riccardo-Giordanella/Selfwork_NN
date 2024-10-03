@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
-     */
+    * Run the migrations.
+    */
     public function up(): void
     {
         Schema::create('article_tag', function (Blueprint $table) {
@@ -28,10 +28,15 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     */
+    * Reverse the migrations.
+    */
     public function down(): void
     {
+        Schema::table('article_tag', function (Blueprint $table) {
+            $table->dropForeign(['article_id']);
+            $table->dropForeign(['tag_id']);
+        });
+
         Schema::dropIfExists('article_tag');
     }
 };
